@@ -1,0 +1,168 @@
+/* Logo */
+.logo {
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.logo img {
+    width: 45px;
+}
+
+/* Hero */
+.hero-section {
+    width: 100%;
+    display:block;
+    position: relative;
+}
+.hero1 {
+    background-image: url("/assets/images/hero-1.png");
+    padding: 17em;
+}
+
+.hero-text {
+    position: absolute;
+    top: .7em;
+    left: -0.8em;
+    font-family: $secondary-font-family;
+    color: $alt-text-color;
+    text-transform: uppercase;
+    font-size: 165px;
+    line-height:1em;
+    text-align: right;
+}
+
+/*.hero-text-v1 {
+    top: 1.5em;
+    left: -.7em;
+}*/
+
+.alt {
+    color: $brand-color;
+}
+
+/* Sections */
+.base-section { height: 100vh; @extend %clearfix;}
+
+/* Statement */
+.statement { text-align: right; padding-bottom: 7em;  }
+
+.statement-title {
+    @include vertical-align(); 
+    font-family: $secondary-font-family; 
+    text-transform: uppercase; 
+    font-size:4em; 
+    padding-bottom: 0.3em;
+    margin-bottom: 0.4em;
+}
+
+.statement-text {
+    @include vertical-align();
+    font-size: 2.5em; 
+    display: block; 
+    font-weight: 300; 
+    font-family: $base-font-family; 
+    line-height: 1.3em; 
+}
+
+/* Featured Work */
+.featured-work {
+    /*@include vertical-align(); */
+    display: block;
+    position: relative;
+    margin-bottom: 10em;
+}
+
+.work-section,
+.info-section {
+    padding: 2em 0;
+}
+
+.work-hero {
+    margin: 0 auto;
+}
+
+.work-title {
+    text-align: left;
+    left: 0.4em;
+    width: 40%;
+    font-size: 137px;
+}
+
+.work-medium {
+    font-size: 22px;
+    top: 64vh;
+    left: 2.6em;
+    text-transform: lowercase;
+}
+
+.work-date {
+    text-transform: uppercase;
+    font-weight: 700;
+    left: -2em;
+    position: absolute;
+    @include vertical-text();
+}
+
+.work-button {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 3em;
+    font-weight: 600;
+    font-family: $secondary-font-family;
+}
+
+.info-title {
+    text-align: center;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+    font-family: $secondary-font-family;
+    font-size: 1.6em;
+}
+
+.info-section {
+    display: block;
+    position:relative;
+    @extend %clearfix;
+    padding-top: 8em;
+    /*@include vertical-align(); */
+}
+
+.featured-work-2 {
+    /*outline: 4px solid red;*/
+    position: relative;
+    display: block;
+    @extend %clearfix;
+}
+
+.spacer {
+    padding-bottom: 54em;
+}
+
+.print-list {
+    list-style: none;
+}
+
+    .print-list-item {
+        text-transform: uppercase;
+        padding: .5em 0;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+
+.base-contact {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-title {
+    font-family: $secondary-font-family;
+}
+
+.contact-text {
+    font-size: 14px;
+}
+
+.group-contact {
+    padding-bottom: 1.4em;
+}

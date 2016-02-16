@@ -1,0 +1,71 @@
+---
+layout: default
+title: SVNCRWNS
+---
+
+<div class="hero-section">
+  <div class="hero1 bg-prop">
+  </div>
+  <h1 class="hero-text">
+    svn<br/><span class="alt">c</span>rwns
+  </h1>
+</div>
+
+
+<div class="base-section statement">
+  <h2 class="statement-title">Don't box us in.</h2>
+  <div class="statement-text">We love conjuring good energy, people and cultured experiences around cultured&nbsp;brands.</div>
+</div>
+
+
+<div class="base-section work-section">
+<!--   <h1>Featured Work</h1> -->
+ <div class="featured-work-2"> 
+  {% for project in site.work limit:2 %}
+  <div class="featured-work">  
+    <img src="{{ project.img-path }}" class="work-hero"/>
+    <div class="hero-text work-title">{{ project.title }}</div>
+    <div class="hero-text work-title work-medium">{{ project.medium }}</div>
+    <div class="work-date">{{ project.date }}</div>
+  </div>
+  {% endfor %}
+  </div>
+  <div class="work-button"><a href="{{ site.baseurl/work }}">View All</a></div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="base-section info-section">
+  <div class="col3">
+    <h3 class="info-title">print</h3>
+    <ul class="print-list">
+    <li class="print-list-item">TMP Goes into Production</li>
+    <li class="print-list-item">Black Cotton travels to Detroit + Philly</li>
+    <li class="print-list-item">Lounge Mini-series: DC @ Avery's Recap</li>
+    </ul>
+  </div>
+  <div class="col3">
+    <h3 class="info-title">press</h3>
+    <ul class="print-list">
+      <li class="print-list-item">TMP Goes into Production</li>
+    <li class="print-list-item">Black Cotton travels to Detroit + Philly</li>
+    </ul>
+  </div>
+  <div class="col3">
+    <h3 class="info-title">contact</h3>
+    <div class="group-contact">
+      <div class="base-contact contact-title">email</div>
+      <div class="base-contact contact-text">hello@svncrwns.com</div>
+    </div>
+    <div class="group-contact">
+    <div class="base-contact contact-title">media</div>
+    <div class="base-contact contact-text">@svncrwns</div>
+    </div>
+    <div class="group-contact">
+    <div class="base-contact contact-title">locale</div>
+    <div class="base-contact contact-text">baltimore + beyond</div>
+    </div>
+  </div>
+</div>
+
+</div>
