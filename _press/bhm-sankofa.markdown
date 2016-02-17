@@ -10,6 +10,6 @@ description: <span class="press-logo">SVNCRWNS</span> has partnered with Sankofa
 partner-logo: "/assets/press/thelivingwell-logo.png"
 partner-name: "The Living Well"
 partner-address: "2443 North Charles Street <br/> Baltimore, Maryland 21218"
-pressrelease-path: "assets/press/press-svncrwns-sankofa-art-installation.pdf"
+pressrelease-path: "/assets/press/press-svncrwns-sankofa-art-installation.pdf"
 ---
 

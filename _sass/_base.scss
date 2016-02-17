@@ -109,6 +109,7 @@ a {
     &:hover {
         color: $brand-color;
         text-decoration: none;
+        border: 3px solid $brand-color;
     }
 }
 
@@ -261,7 +262,11 @@ pre {
 }
 
 .override-padding {
-    padding-top: 40em !important;
+    padding-top: 50em !important;
+
+    @include phone-sm {
+        padding-top: 40em !important;
+    }
 
     @include palm {
         padding-top: 9em !important;        

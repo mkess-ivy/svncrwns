@@ -3,7 +3,7 @@ title: "Sankofa BHM&nbsp;for Youth"
 medium: "an art installation"
 date: "Feb 15 2016"
 img-path: "assets/images/project-2-hero.jpg"
-url-path: "#"
+url-path: "/press/bhm-sankofa/"
 ---
 
 ## Abbey Road - The Beatles

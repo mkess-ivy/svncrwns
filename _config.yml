@@ -4,7 +4,8 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   SVNCRWNS is a studio working to shift the paradigms of society through art and action.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://svncrwns.com" # the base hostname & protocol for your site
+# url: "http://svncrwns.com" # the base hostname & protocol for your site
+url: "http://localhost:4000"
 twitter_username: svncrwns
 github_username:  jekyll
 

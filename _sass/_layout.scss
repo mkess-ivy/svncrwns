@@ -153,9 +153,15 @@
     text-align: left;
     left: 0.4em;
     width: 70%;
-    font-size: 2.5em;
+    font-size: 1.6em;
     position: absolute;
     top: 0.8em;
+    font-family: $secondary-font-family;
+    font-weight: $secondary-font-weight;
+
+    @include phone-sm {
+        font-size: 2.5em;
+    }
 
     @include phone {
         font-size: 3.1em;
@@ -177,9 +183,13 @@
 
 .work-medium {
     font-size: .9em;
-    top: 11em;
+    top: 7em;
     left: 1.2em;
     text-transform: lowercase;
+    
+    @include phone-sm {
+        top: 11em;
+    }
 
     @include phone {
         top: 13em;
@@ -205,11 +215,15 @@
 
 .work-date {
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 700;
     left: -1.5em;
     position: absolute;
     @include vertical-text();
+
+    @include phone-sm {
+        font-size: 0.8em;
+    }
 
     @include palm {
         font-size: $base-font-size;
@@ -234,6 +248,10 @@
     padding-bottom: 3em;
     font-weight: 600;
     font-family: $secondary-font-family;
+}
+
+.work-button a:hover {
+    color: $brand-color;
 }
 
 .info-title {
@@ -283,6 +301,7 @@
     
         a {
             @include base-link ();
+            font-weight: $base-font-weight;
             margin: 0;
             padding: 0;
         }
@@ -294,7 +313,9 @@
     @include base-link ();
     color: $alt-text-color;
 }      
-
+.project-link:hover {
+    border: none;
+}
 .base-contact {
     text-align: center;
     text-transform: uppercase;
@@ -309,6 +330,7 @@
 
     a {
         @include base-link ();
+        font-weight: $base-font-weight;
         margin: 0;
         padding: 0;
     }
@@ -346,6 +368,7 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 2em;
+    font-weight: 400;
         /*padding-left: 3em;*/
 
     @include palm-mid {

@@ -7,7 +7,7 @@ layout: default
     <div class="press-topmsg"><span class="press-logo">svncrwns</span> presents</div>
   </header>
 
-  <article class="post-content">
+  <article class="press-content">
     <div class="press-hero"><img src=" {{ page.img-path }}"/></div>
     <div class="press-text">{{ page.description }}</div>
     <div class="date-group">
@@ -20,9 +20,8 @@ layout: default
       <div class="partner-address">{{ page.partner-address }}</div>
     </div>
     <div class="press-button-group">
-      <a class="press-button" href="{{ page.pressrelease-path }}">view press release</a>
+      <a class="press-button" href="{{ page.pressrelease-path }}" target="_blank">view press release</a>
     </div>
-    {{ content }}
   </article>
 
 </div>

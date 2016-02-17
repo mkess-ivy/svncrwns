@@ -1,3 +1,8 @@
+.press-content {
+	position: relative;
+	bottom: -4em;
+}
+
 .press-topmsg {
 	text-transform: uppercase;
 	text-align: center;
@@ -59,4 +64,5 @@
 
 .press-button {
 	text-transform: uppercase;
+	font-weight: 400;
 }
