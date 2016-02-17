@@ -1,8 +1,9 @@
 ---
-title: "Swans of Africa"
+title: "Sankofa BHM&nbsp;for Youth"
 medium: "an art installation"
-date: "Jan 02 2016"
-img-path: "assets/images/work-one-1000x700.jpg"
+date: "Feb 15 2016"
+img-path: "assets/images/project-2-hero.jpg"
+url-path: "#"
 ---
 
 ## Abbey Road - The Beatles

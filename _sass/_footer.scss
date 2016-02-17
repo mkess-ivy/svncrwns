@@ -1,13 +1,103 @@
 
+
+
+
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    margin-top: 22em;
+    
+    @include phone {
+        margin-top: 27em;
+    }
+
+    @include phone-mid {
+        margin-top: 36em;
+    }
+
+    @include palm {
+        margin-top: 43em;
+        /*padding: 0 10em;*/
+    }
+
+    @include palm-mid {
+        margin-top: 7em;
+    }
+
+    @include laptop {
+        margin-top: 14em;
+    }
 }
 
-.footer-heading {
+.footer-group {
+    text-align: center;
+    line-height: .3em;
+    display: inline-block;
+    width: 100%;
+
+    @include palm {
+        /*text-align: left;*/
+        line-height: $base-line-height;
+        margin-top: 4em;
+    }
+}
+
+.footer-text,
+.footer-logo {
+    display: inline-block;
+    font-size: $base-font-size;
+}
+.footer-text {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: $base-font-family;
+}
+
+.footer-logo {
+    font-family: $secondary-font-family;
+}
+
+.social {
+    margin-top: 1em;
+    text-align: center;
+    float: none;
+    position: relative;
+    display: inline-block;
+    margin: 1em auto;
+    width: 100%;
+
+    @include palm{
+        /*float: right;*/
+        margin-top: 1em;
+    }
+}
+
+
+.social-list {
+    display: inline-block;
+    margin: 1em 0 3em 0;
+
+    @include palm {
+        margin: 0;
+    }
+}
+
+.social-list-item {
+    display: inline-block;
+    padding-right: 10px;
+    width: 20px;
+
+    a {
+        @include base-link ();
+    
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}
+
+/*.footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
@@ -67,5 +157,5 @@
     }
 }
 
-
+*/
 

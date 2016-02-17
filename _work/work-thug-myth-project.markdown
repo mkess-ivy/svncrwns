@@ -1,8 +1,9 @@
 ---
-title: "Swans of Africa"
-medium: "a visual experiment"
+title: "Thug Myth Project"
+medium: "a transmedia project"
 date: "Jan 03 2016"
-img-path: "assets/images/work-one-1000x700.jpg"
+img-path: "assets/images/project-1-hero.jpg"
+url-path: "http://www.thethugmythproject.com"
 ---
 
 ## Abbey Road - The Beatles

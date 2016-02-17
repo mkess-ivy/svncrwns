@@ -14,17 +14,17 @@ title: SVNCRWNS
 
 <div class="base-section statement">
   <h2 class="statement-title">Don't box us in.</h2>
-  <div class="statement-text">We love conjuring good energy, people and cultured experiences around cultured&nbsp;brands.</div>
+  <div class="statement-text">We love conjuring good energy, people and cultured experiences around cultured brands.</div>
 </div>
 
 
-<div class="base-section work-section">
+<div class="base-section work-section clear">
 <!--   <h1>Featured Work</h1> -->
  <div class="featured-work-2"> 
   {% for project in site.work limit:2 %}
   <div class="featured-work">  
     <img src="{{ project.img-path }}" class="work-hero"/>
-    <div class="hero-text work-title">{{ project.title }}</div>
+    <div class="hero-text work-title"><a href="{{ project.url-path }}" class="project-link">{{ project.title }}</a></div>
     <div class="hero-text work-title work-medium">{{ project.medium }}</div>
     <div class="work-date">{{ project.date }}</div>
   </div>
@@ -39,32 +39,44 @@ title: SVNCRWNS
   <div class="col3">
     <h3 class="info-title">print</h3>
     <ul class="print-list">
-    <li class="print-list-item">TMP Goes into Production</li>
-    <li class="print-list-item">Black Cotton travels to Detroit + Philly</li>
-    <li class="print-list-item">Lounge Mini-series: DC @ Avery's Recap</li>
+    <li class="print-list-item"><a href="#">TMP Goes into Production</a></li>
+    <li class="print-list-item"><a href="#">Black Cotton travels to Detroit + Philly</a></li>
+    <li class="print-list-item"><a href="#">Lounge Mini-series: DC @ Avery's Recap</a></li>
     </ul>
   </div>
   <div class="col3">
     <h3 class="info-title">press</h3>
     <ul class="print-list">
-      <li class="print-list-item">TMP Goes into Production</li>
-    <li class="print-list-item">Black Cotton travels to Detroit + Philly</li>
+      <li class="print-list-item"><a href="#">TMP Goes into Production</a></li>
+      <li class="print-list-item"><a href="#">Black Cotton travels to Detroit + Philly</a></li>
     </ul>
   </div>
   <div class="col3">
     <h3 class="info-title">contact</h3>
     <div class="group-contact">
       <div class="base-contact contact-title">email</div>
-      <div class="base-contact contact-text">hello@svncrwns.com</div>
+      <div class="base-contact contact-text"><a href="#">hello@svncrwns.com</a></div>
     </div>
     <div class="group-contact">
-    <div class="base-contact contact-title">media</div>
-    <div class="base-contact contact-text">@svncrwns</div>
+      <div class="base-contact contact-title">media</div>
+      <div class="base-contact contact-text"><a href="#">@svncrwns</a></div>
     </div>
     <div class="group-contact">
-    <div class="base-contact contact-title">locale</div>
-    <div class="base-contact contact-text">baltimore + beyond</div>
+      <div class="base-contact contact-title">locale</div>
+      <div class="base-contact contact-text">baltimore + beyond</div>
     </div>
+  </div>
+</div>
+
+<div class="base-section info-section override-padding">
+  <div class="col2">
+    <div class="newsletter-group">
+      <h3 class="info-title newsletter-title">join the <br/>crew</h3>
+      <p class="newsletter-text">we don't do hype. <br/>only ideas + concepts. <br/> sign up to catch the wave.</p>
+    </div>
+  </div>
+  <div class="col2">
+    <img src="assets/images/svncrwns-throne.jpg" class="throne-img"/>
   </div>
 </div>
 

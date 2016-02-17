@@ -28,10 +28,58 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    1000px;
 
+$on-phone:		   440px;
+$on-phone-mid:	   540px;
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-palm-mid:	   750px;
+$on-laptop:        900px;
+$on-laptop-mid:	   1000px;
+$on-desktop:	   1100px;
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
 
+@mixin phone {
+	@media screen and (min-width: #{$on-phone}) {
+		@content;
+	}
+}
+
+@mixin phone-mid {
+	@media screen and (min-width: #{$on-phone-mid}) {
+		@content;
+	}
+}
+
+@mixin palm {
+	@media screen and (min-width: #{$on-palm}) {
+		@content;
+	}
+}
+
+@mixin palm-mid {
+	@media screen and (min-width: #{$on-palm-mid}) {
+		@content;
+	}
+}
+
+@mixin laptop {
+  @media (min-width: #{$on-laptop}) {
+    @content;
+  }
+}
+
+@mixin laptop-mid {
+  @media (min-width: #{$on-laptop-mid}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$on-desktop}) {
+    @content;
+  }
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -41,7 +89,7 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
@@ -53,5 +101,6 @@ $on-laptop:        800px;
         "base",
         "layout",
         "posts",
+        "footer",
         "syntax-highlighting"
 ;

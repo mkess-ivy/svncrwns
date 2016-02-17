@@ -1,3 +1,7 @@
+* {
+  /*  outline: 1px solid red;*/
+}
+
 /**
  * Reset some basic elements
  */
@@ -227,16 +231,46 @@ pre {
 }
 
 .col3 {
-    width: 33.2%;
-    height: 300px;
-    /*background: red;*/
-    float:left;
-    position:relative;
+    width: 100%;
+
+    @include palm {
+        width: 33.2%;
+        float:left;
+        position:relative;
+    }
 }
 
-.spacer { padding: 0 30px; }
+.col2 {
+    width: 100%;
+    
+    @include palm-mid {        
+        width: 50%;
+        float: left;
+        position: relative;
+        height: 100%;
+    }
+}
+
+.spacer { 
+    padding: 0 30px; 
+    padding-bottom: 60%;
+
+    @include laptop {
+        padding-bottom: 80%;
+    }
+}
+
+.override-padding {
+    padding-top: 40em !important;
+
+    @include palm {
+        padding-top: 9em !important;        
+    }
+}
+
 
 @mixin vertical-align($position: relative) {
+  
   position: $position;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -249,6 +283,12 @@ pre {
     transform-origin: left top 0;
 }
 
-@mixin clearfix {
+@mixin base-link {
+    border: none;
+    text-decoration: none;
 
+    &:hover {
+        color: $brand-color;
+    };
 }
+
