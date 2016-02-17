@@ -16,3 +16,7 @@ collections:
   work:
     output: true
     permalink: /work/:path/
+
+  press:
+    output: true
+    permalink: /press/:path/
