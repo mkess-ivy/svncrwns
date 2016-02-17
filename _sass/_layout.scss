@@ -22,16 +22,21 @@
 
 
 .hero-text {
-    font-size: 63px;
+    font-size: 4em;
     font-family: $secondary-font-family;
     left: 0;
     width: 100%;
     position: absolute;
-    top: 3.7em;
+    top: 3em;
     color: $alt-text-color;
     text-transform: uppercase;
     line-height:1em;
     text-align: right;
+
+    @include phone-sm {
+        font-size: 63px;
+        top: 3.7em;
+    }
 
     @include phone {
         font-size: 6em;
@@ -86,7 +91,7 @@
 }
 
 /* Statement */
-.statement { text-align: right; padding-bottom: 7em; padding-right: 1em; }
+.statement { text-align: right; padding-bottom: 7em; padding-right: 1em; padding-top: 4em;}
 
 .statement-title {
     @include vertical-align(); 
@@ -290,6 +295,7 @@
 
 .print-list {
     list-style: none;
+}
 
 
     .print-list-item {
@@ -298,15 +304,22 @@
         width: 80%;
         margin: 0 auto;
         font-size: 1.1em;
+    }
     
-        a {
+    .print-list-link, .press-list-link {
             @include base-link ();
             font-weight: $base-font-weight;
             margin: 0;
             padding: 0;
-        }
+
+            &:hover {
+                border: none;
+            }
     }
-}  
+
+
+    
+
 
 .project-link,
 .project-link:visited {
@@ -327,14 +340,19 @@
 
 .contact-text {
     font-size: 14px;
+}
 
-    a {
-        @include base-link ();
-        font-weight: $base-font-weight;
-        margin: 0;
-        padding: 0;
+.contact-link {
+    @include base-link ();
+    font-weight: $base-font-weight;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        border: none;
     }
 }
+
 
 .group-contact {
     padding-bottom: 1.4em;
