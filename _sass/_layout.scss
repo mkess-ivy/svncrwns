@@ -115,13 +115,17 @@
 
 .statement-text {
     @include vertical-align();
-    font-size: 2em;
+    font-size: 1.7em;
     display: block; 
     font-weight: 300; 
     font-family: $base-font-family; 
     line-height: 1.3em; 
     top: 40%;
     
+    @include phone-sm {
+        font-size: 2em;
+    }
+
     @include palm {
         font-size: 2.5em; 
         top: 50%;
@@ -147,7 +151,11 @@
 
 .work-section,
 .info-section {
-    padding: 2em 0;
+    padding: 4em 0;
+
+    @include phone-sm {
+        padding: 2em 0;
+    }
 }
 
 .work-hero {

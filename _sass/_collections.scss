@@ -20,16 +20,32 @@
 }
 
 .press-text {
-	width: 50%;
-    text-align: center;
-    margin: 0 auto;
+
+	width: 90%;
+	text-align: center;
+    margin: 0 auto; 
+    padding-top: 2em;
+
+	@include phone-sm {
+		width: 50%;
+		padding-top: 0;
+    
+}
 }
 
 .date-group, .partner-group, .press-button-group {
-	width: 50%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
     text-align: center;
     padding-top: 3em;
+
+	@include phone-sm {
+		width: 50%;
+	}
+}
+
+.date-group {
+	
 }
 
 .press-date {

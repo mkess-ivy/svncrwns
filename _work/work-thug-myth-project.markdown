@@ -1,6 +1,6 @@
 ---
 title: "Thug Myth Project"
-medium: "a transmedia project"
+medium: "a transmedi	a project"
 date: "Jan 03 2016"
 img-path: "assets/images/project-1-hero.jpg"
 url-path: "http://www.thethugmythproject.com"
