@@ -2,23 +2,26 @@
  * Site footer
  */
 .site-footer {
-    margin-top: 22em;
-    
+    margin-top: 33em;
+
+    @include phone-sm {
+    margin-top: 35em;
+    }
     @include phone {
-        margin-top: 27em;
+        margin-top: 43em;
     }
 
     @include phone-mid {
-        margin-top: 36em;
+        margin-top: 48em;
     }
 
     @include palm {
-        margin-top: 43em;
+        margin-top: 50em;
         /*padding: 0 10em;*/
     }
 
     @include palm-mid {
-        margin-top: 7em;
+        margin-top: 12em;
     }
 
     @include palm-hi {
