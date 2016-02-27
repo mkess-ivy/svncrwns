@@ -1,9 +1,11 @@
 ---
 title: "Sankofa BHM&nbsp;for Youth"
 medium: "an art installation"
-date: "Feb 15 2016"
-img-path: "assets/images/project-2-hero.jpg"
+date: "Feb 23 2016"
+img-path: "/assets/images/project-2-hero-2.jpg"
 url-path: "/press/bhm-sankofa/"
+credits: ["Chavon Henderson", "Montier Kess", "Philip Taylor", "Nick Mitchel"]
+synopsis: "This is a short synopsis, to be seen on the work page, you may never see this text again. Ha...ha."
 ---
 
 ## Abbey Road - The Beatles

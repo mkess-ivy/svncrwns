@@ -1,0 +1,33 @@
+---
+layout: default
+title: SVNCRWNS
+---
+	<div class="header-title">Work</div>
+
+	<div class="work-group">
+		<!--  -->
+		{% for project in site.work reversed %}
+		<div class="featured-work-2 work-hero-specs"> 
+	  		
+	  		<div class="featured-work clear-this">  
+		    	<img src="{{ project.img-path }}" class="work-hero"/>
+		    	<div class="hero-text work-title"><a href="{{ project.url-path }}" class="project-link" target="_blank">{{ project.title }}</a></div>
+		    	<div class="hero-text work-title work-medium">{{ project.medium }}</div>
+		    	<div class="work-date">{{ project.date }}</div>
+	  		</div>
+	  	</div>
+	  
+		<div class="work-meta-group">
+			<div class="header-title medium-header">Credits</div>
+			<!-- names of people - automatically generated -->
+			<ul class="credits-list">{% for name in project.credits %}
+				<li>{{ name }}</li>{% endfor %}
+			</ul> 
+			<br/>
+			<div class="header-title medium-header">Synopsis</div>
+			<div class="synopsis-text">{{ project.synopsis }}</div>
+		</div>
+		{% endfor %}
+
+	</div>
+<!-- <div class="space"></div> -->

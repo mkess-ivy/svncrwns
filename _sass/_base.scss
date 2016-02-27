@@ -271,6 +271,30 @@ pre {
     }
 }
 
+.space {
+    padding-bottom: 32em;
+
+    @include phone-sm {
+        padding-bottom: 35em;
+    }
+
+    @include phone {
+        padding-bottom: 40em; 
+    }
+
+    @include phone-mid {
+        padding-bottom: 48em;
+    }
+
+    @include palm-mid {
+        padding-bottom: 13em;
+    }
+
+    @include desktop {
+        padding-bottom: 15em;
+    }
+}
+
 .override-padding {
     padding-top: 50em !important;
 

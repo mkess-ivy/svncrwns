@@ -2,7 +2,7 @@
  * Site footer
  */
 .site-footer {
-    margin-top: 33em;
+/*    margin-top: 33em;
 
     @include phone-sm {
     margin-top: 35em;
@@ -17,19 +17,18 @@
 
     @include palm {
         margin-top: 50em;
-        /*padding: 0 10em;*/
     }
 
     @include palm-mid {
         margin-top: 12em;
     }
 
-    @include palm-hi {
-        padding: 0 3em;
-    }
-
     @include laptop {
         margin-top: 14em;
+    }*/
+
+    @include palm-hi {
+        padding: 0 3em;
     }
 
     @include laptop-mid {
